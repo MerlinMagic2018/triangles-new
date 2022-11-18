@@ -1,4 +1,4 @@
-Source: deeponion
+Source: triangles
 Section: Utility
 Priority: optional
 Maintainer: Nezero <nezero@nezero.co.uk>
@@ -6,34 +6,34 @@ Build-Depends: debhelper (>= 9), libtool, dh-autoreconf, autoconf, pkg-config, l
  libminiupnpc-dev, libevent-dev, libcap-dev, libseccomp-dev, git, bsdmainutils, libqt5gui5, libqt5core5a, libqt5dbus5,
  qttools5-dev, qttools5-dev-tools, libprotobuf-dev, protobuf-compiler, libdb4.8-dev, libdb4.8++-dev, libssl1.0-dev
 Standards-Version: 4.1.4
-Homepage: https://deeponion.org/
-Vcs-Git: https://github.com/deeponion/deeponion.git
-Vcs-Browser: https://github.com/deeponion/deeponion.git
+Homepage: https://triangles.org/
+Vcs-Git: https://github.com/triangles/triangles.git
+Vcs-Browser: https://github.com/triangles/triangles.git
 
-Package: deeponion-qt
+Package: triangles-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: GUI package for the DeepOnion Blockchain
+Description: GUI package for the Triangles Blockchain
  An anonymous and 100% untraceable cryptocurrency sent through the TOR network.
  .
- DeepOnion is an anonymous cryptocurrency that is natively integrated with the
+ Triangles is an anonymous cryptocurrency that is natively integrated with the
  Tor network. It increases the level of privacy for crypto users to reduce
  the likelihood of being hacked or attacked by other legal & illegal entities.
- With DeepOnion, you can send and receive onions (ONION) over the Tor network.
- With DeepOnion your anonymity is guaranteed, you can send and receive private
- transactions using the DeepOnion wallet.
+ With Triangles, you can send and receive onions (TRI) over the Tor network.
+ With Triangles your anonymity is guaranteed, you can send and receive private
+ transactions using the Triangles wallet.
 
-Package: deeponiond
+Package: trianglesd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: daemon and command line package for the DeepOnion Blockchain
+Description: daemon and command line package for the Triangles Blockchain
  An anonymous and 100% untraceable cryptocurrency sent through the TOR network.
  .
  The command line package is designed for integration with other services and
  can be considered for server based systems and system that do not have a VDU.
- DeepOnion is an anonymous cryptocurrency that is natively integrated with the
+ Triangles is an anonymous cryptocurrency that is natively integrated with the
  Tor network. It increases the level of privacy for crypto users to reduce
  the likelihood of being hacked or attacked by other legal & illegal entities.
- With DeepOnion, you can send and receive onions (ONION) over the Tor network.
- With DeepOnion your anonymity is guaranteed, you can send and receive private
- transactions using the DeepOnion wallet.
+ With Triangles, you can send and receive onions (TRI) over the Tor network.
+ With Triangles your anonymity is guaranteed, you can send and receive private
+ transactions using the Triangles wallet.

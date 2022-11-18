@@ -6,13 +6,13 @@ define(_CLIENT_VERSION_REVISION, 3)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
-AC_INIT([DeepOnion Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/deeponion/deeponion-dv/issues],[deeponion],[http://deeponion.org/])
+AC_INIT([Triangles Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/triangles/triangles-dv/issues],[triangles],[http://triangles.org/])
 AC_CONFIG_AUX_DIR([src/build-aux])
 AC_CONFIG_MACRO_DIR([src/m4])
 AC_CANONICAL_HOST
-AH_TOP([#ifndef DEEPONION_CONFIG_H])
-AH_TOP([#define DEEPONION_CONFIG_H])
-AH_BOTTOM([#endif //DEEPONION_CONFIG_H])
+AH_TOP([#ifndef DEEPTRI_CONFIG_H])
+AH_TOP([#define DEEPTRI_CONFIG_H])
+AH_BOTTOM([#endif //DEEPTRI_CONFIG_H])
 AX_SUBDIRS_CONFIGURE([tor], [[--disable-unittests], [--disable-system-torrc], [--disable-systemd], [--disable-lzma], [--disable-asciidoc], [--with-openssl-dir=$($PKG_CONFIG --variable=libdir openssl)], [CFLAGS=$($PKG_CONFIG --cflags openssl) -fPIC -O2]])
 
 
@@ -130,7 +130,7 @@ AC_ARG_ENABLE([glibc-back-compat],
 AC_ARG_WITH([protoc-bindir],[AS_HELP_STRING([--with-protoc-bindir=BIN_DIR],[specify protoc bin path])], [protoc_bin_path=$withval], [])
 
 AC_CONFIG_SRCDIR([src])
-AC_CONFIG_HEADERS([src/config/deeponion-config.h])
+AC_CONFIG_HEADERS([src/config/triangles-config.h])
 
 dnl Checks for programs.
 AC_PROG_CXX
@@ -326,7 +326,7 @@ dnl Check for pthread compile/link requirements
 AX_PTHREAD
 INCLUDES="$INCLUDES $PTHREAD_CFLAGS"
 
-# The following macro will add the necessary defines to deeponion-config.h, but
+# The following macro will add the necessary defines to triangles-config.h, but
 # they also need to be passed down to any subprojects. Pull the results out of
 # the cache and add them to CPPFLAGS.
 AC_SYS_LARGEFILE
@@ -571,7 +571,7 @@ fi
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build DeepOniond])
+AC_MSG_CHECKING([whether to build Trianglesd])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 

@@ -1,8 +1,8 @@
 //
 //
 
-#ifndef DEEPONION_THEME_FANCY_PURPLE_H
-#define DEEPONION_THEME_FANCY_PURPLE_H
+#ifndef DEEPTRI_THEME_FANCY_PURPLE_H
+#define DEEPTRI_THEME_FANCY_PURPLE_H
 
 #include "theme.h"
 
@@ -13,4 +13,4 @@ public:
 };
 
 
-#endif //DEEPONION_THEME_FANCY_PURPLE_H
+#endif //DEEPTRI_THEME_FANCY_PURPLE_H

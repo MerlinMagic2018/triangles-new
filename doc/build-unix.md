@@ -26,17 +26,17 @@ If you want to build GUI version, do this, otherwise you can skip this step:
 ```
 apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 ```
-#### DeepOnion Source
+#### Triangles Source
 
-Then get deeponion source:
+Then get triangles source:
 
-`git clone --recursive https://github.com/deeponion/deeponion.git`
+`git clone --recursive https://github.com/triangles/triangles.git`
 
 #### Autotools
 
 Build with autotools:
 
-    cd deeponion
+    cd triangles
     ./autogen.sh
     ./configure --with-gui=qt5    (if you want to build daemon, use --without-gui)
     make
@@ -45,16 +45,16 @@ Build with autotools:
 
 **Ubuntu 18.04**
 
-For ECDSA_SIG related errors, change the key.h file for the [Raspberry Pi branch](https://github.com/deeponion/deeponion/blob/raspberry/src/key.h) version then re-build:
+For ECDSA_SIG related errors, change the key.h file for the [Raspberry Pi branch](https://github.com/triangles/triangles/blob/raspberry/src/key.h) version then re-build:
 
-    cd deeponion/src
+    cd triangles/src
     sudo rm key.h
     cp ../contrib/ubuntu18/key.h .
     cd .. && make
 
 **Ubuntu 14.04**
 
-If you have problems with boost libraries visit [this link](https://github.com/deeponion/deeponion/issues/63#issuecomment-365329304) for a possible solution.
+If you have problems with boost libraries visit [this link](https://github.com/triangles/triangles/issues/63#issuecomment-365329304) for a possible solution.
 
 Another tested solution is the one for Debian 8. See below for more details. 
 
@@ -62,20 +62,20 @@ Another tested solution is the one for Debian 8. See below for more details.
 
 It has been reported that under Debian 9 the installation of *libssl1.1-dev* leads to compilation errors.
 
-If you experience such issues, put *libssl1.0-dev* into your install list, or see [seperate build instructions](https://github.com/deeponion/deeponion/blob/raspberry/doc/build-debian-9.md).
+If you experience such issues, put *libssl1.0-dev* into your install list, or see [seperate build instructions](https://github.com/triangles/triangles/blob/raspberry/doc/build-debian-9.md).
 
 **Debian 8**
 
 It has been reported the following problem when one compiles the wallet on Debian 8:
 
-    make[1]: Entering directory ‘/home/deeponion/deeponion/src’
-      CXXLD    DeepOniond
+    make[1]: Entering directory ‘/home/triangles/triangles/src’
+      CXXLD    Trianglesd
     libbitcoin_wallet.a(libbitcoin_wallet_a-walletdb.o): In function `copy_file’:
     /usr/include/boost/filesystem/operations.hpp:381: undefined reference to `boost::filesystem::detail::copy_file(boost::filesystem::path const&, boost::filesystem::path const&, boost::filesystem::copy_option, boost::system::error_code*)'
     collect2: error: ld returned 1 exit status
-    Makefile:2224: recipe for target ‘DeepOniond’ failed
-    make[1]: *** [DeepOniond] Error 1
-    make[1]: Leaving directory ‘/home/deeponion/deeponion/src’
+    Makefile:2224: recipe for target ‘Trianglesd’ failed
+    make[1]: *** [Trianglesd] Error 1
+    make[1]: Leaving directory ‘/home/triangles/triangles/src’
     Makefile:531: recipe for target ‘all-recursive’ failed
     make: *** [all-recursive] Error 1
 

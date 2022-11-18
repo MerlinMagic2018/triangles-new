@@ -1,8 +1,8 @@
-// Copyright (c) 2012-2013 The DeepOnion developers
+// Copyright (c) 2012-2013 The Triangles developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef DeepOnion_KERNEL_H
-#define DeepOnion_KERNEL_H
+#ifndef Triangles_KERNEL_H
+#define Triangles_KERNEL_H
 
 #include "main.h"
 

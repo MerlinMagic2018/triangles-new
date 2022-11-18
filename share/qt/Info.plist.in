@@ -11,13 +11,13 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>DeepOnion.icns</string>
+  <string>Triangles.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2017-@COPYRIGHT_YEAR@ The DeepOnion developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2017-@COPYRIGHT_YEAR@ The Triangles developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>DeepOnion-Qt</string>
+  <string>Triangles-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.deeponion.DeepOnion-Qt</string>
+  <string>org.triangles.Triangles-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.deeponion.DeepOnionPayment</string>
+      <string>org.triangles.TrianglesPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>deeponion</string>
+        <string>triangles</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.deeponion.paymentrequest</string>
+      <string>org.triangles.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>DeepOnion payment request</string>
+      <string>Triangles payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-deeponion-payment-request</string>
+        <string>application/x-triangles-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>deeponionpaymentrequest</string>
+          <string>trianglespaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.deeponion.paymentrequest</string>
+        <string>org.triangles.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

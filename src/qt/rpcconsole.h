@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2017 The Bitcoin Core developers
-// Copyright (c) 2018 The DeepOnion developers
+// Copyright (c) 2018 The Triangles developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -77,7 +77,7 @@ private slots:
     void showOrHideBanTableIfRequired();
     /** clear the selected node */
     void clearSelectedNode();
-    /** Open external (default) editor with DeepOnion.conf */
+    /** Open external (default) editor with Triangles.conf */
     void showConfEditor();
 
   public slots:

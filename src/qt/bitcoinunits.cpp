@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("ONION");
-    case mBTC: return QString("mONION");
-    case uBTC: return QString::fromUtf8("μONION");
+    case BTC: return QString("TRI");
+    case mBTC: return QString("mTRI");
+    case uBTC: return QString::fromUtf8("μTRI");
     default: return QString("");
     }
 }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("DeepOnion");
-    case mBTC: return QString("Milli-DeepOnion (1 / 1,000)");
-    case uBTC: return QString("Micro-DeepOnion (1 / 1,000,000)");
+    case BTC: return QString("Triangles");
+    case mBTC: return QString("Milli-Triangles (1 / 1,000)");
+    case uBTC: return QString("Micro-Triangles (1 / 1,000,000)");
     default: return QString("???");
     }
 }

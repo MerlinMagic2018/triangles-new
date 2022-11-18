@@ -3,7 +3,7 @@
 
 #### Disclaimer
 
-This guide has it's a modified version of this original guide: [DeepOnion in Tails persistent volume](https://gist.github.com/dragononcrypto/d3df54d72b23f7c1023876cc7264707e)
+This guide has it's a modified version of this original guide: [Triangles in Tails persistent volume](https://gist.github.com/dragononcrypto/d3df54d72b23f7c1023876cc7264707e)
 
 
 The following are commands needed to build on Debian from scratch (use sudo if you are not root). It has been verified with Debian 9 Stretch
@@ -22,7 +22,7 @@ sudo apt install software-properties-common libqt5gui5 libqt5core5a libqt5dbus5 
 Debian repository doesn’t contain libdb4.8. So you need to get add the additional APT repositories. Create the file than will contain the repositories:
 
 ``` 
-sudo nano /etc/apt/sources.list.d/deeponionAdd.list
+sudo nano /etc/apt/sources.list.d/trianglesAdd.list
  ``` 
  
 Add the additional repositories:
@@ -46,28 +46,28 @@ Install additional dependencies Berkeley 4.8++ and OpenSSL 1.0
 sudo apt install libdb4.8-dev libdb4.8++-dev libssl1.0 libssl1.0-dev
 ```
 
-#### Clone and compile DeepOnion
+#### Clone and compile Triangles
 
-Clone deeponion repository:
+Clone triangles repository:
 
 ```
 cd 
-git clone --recursive https://github.com/deeponion/deeponion.git
+git clone --recursive https://github.com/triangles/triangles.git
 ```
 
 Build with autotools:
 
 ```
-cd deeponion
+cd triangles
 ./autogen.sh
 ./configure --with-gui=qt5
 make
 ```
 
-Now the system is compiled. You can copy DeepOnion-qt file to the place that you want. Go to the desired folder and do:
+Now the system is compiled. You can copy Triangles-qt file to the place that you want. Go to the desired folder and do:
 
 ```
-cp ~/deeponion/src/qt/DeepOnion-qt .
+cp ~/triangles/src/qt/Triangles-qt .
 ```
 
 

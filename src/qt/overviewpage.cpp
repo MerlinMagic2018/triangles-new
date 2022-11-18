@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The DeepOnion developers
+// Copyright (c) 2018 The Triangles developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -112,7 +112,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->wallet_summary->setStyleSheet(themeManager->getCurrent()->getQFrameGeneralStyle());
     ui->page_title->setStyleSheet(themeManager->getCurrent()->getMainHeaderStyle());
     ui->walletSummaryHeader->setStyleSheet(themeManager->getCurrent()->getSubSectionTitleStyle());
-    ui->do_icon->setIcon(QIcon(themeManager->getCurrent()->getDeepOnionLogo()));
+    ui->do_icon->setIcon(QIcon(themeManager->getCurrent()->getTrianglesLogo()));
     // Recent transactions
     //ui->listTransactions->setItemDelegate(txdelegate);
     //ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
@@ -151,7 +151,7 @@ void OverviewPage::setBalance(qint64 balance, qint64 stake, qint64 unconfirmedBa
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
 
-    // Removing ONION unit from the Wallet Summary Section. Unfortunately there is no space for that.
+    // Removing TRI unit from the Wallet Summary Section. Unfortunately there is no space for that.
     ui->labelBalance->setText(BitcoinUnits::formatWithoutUnit(unit, balance));
     ui->labelStake->setText(BitcoinUnits::formatWithoutUnit(unit, stake));
     ui->labelUnconfirmed->setText(BitcoinUnits::formatWithoutUnit(unit, unconfirmedBalance));
@@ -272,7 +272,7 @@ void OverviewPage::refreshStyle() {
     ui->page_title->setStyleSheet(themeManager->getCurrent()->getMainHeaderStyle());
     ui->walletSummaryHeader->setStyleSheet(themeManager->getCurrent()->getSubSectionTitleStyle());
     ui->wallet_summary->setStyleSheet(themeManager->getCurrent()->getQFrameGeneralStyle());
-    ui->do_icon->setIcon(QIcon(themeManager->getCurrent()->getDeepOnionLogo()));
+    ui->do_icon->setIcon(QIcon(themeManager->getCurrent()->getTrianglesLogo()));
     ui->listTransactions->setStyleSheet(themeManager->getCurrent()->getQTableGeneralStyle());
     ui->listTransactions->horizontalHeader()->setStyleSheet(themeManager->getCurrent()->getQListHeaderGeneralStyle());
 }

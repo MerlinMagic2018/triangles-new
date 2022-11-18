@@ -5,19 +5,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About DeepOnion</source>
-        <translation>About DeepOnion</translation>
+        <source>About Triangles</source>
+        <translation>About Triangles</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;DeepOnion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;DeepOnion&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Triangles&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Triangles&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The DeepOnion developers</source>
+Copyright © 2014 The Triangles developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -65,8 +65,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your DeepOnion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your DeepOnion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your Triangles addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your Triangles addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a DeepOnion address</source>
-        <translation>Sign a message to prove you own a DeepOnion address</translation>
+        <source>Sign a message to prove you own a Triangles address</source>
+        <translation>Sign a message to prove you own a Triangles address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified DeepOnion address</source>
-        <translation>Verify a message to ensure it was signed with a specified DeepOnion address</translation>
+        <source>Verify a message to ensure it was signed with a specified Triangles address</source>
+        <translation>Verify a message to ensure it was signed with a specified Triangles address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>DeepOnion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>DeepOnion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
+        <source>Triangles will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Triangles will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>Show information about DeepOnion</source>
-        <translation>Show information about DeepOnion</translation>
+        <source>Show information about Triangles</source>
+        <translation>Show information about Triangles</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -430,13 +430,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-64"/>
-        <source>Send coins to a DeepOnion address</source>
-        <translation>Send coins to a DeepOnion address</translation>
+        <source>Send coins to a Triangles address</source>
+        <translation>Send coins to a Triangles address</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for DeepOnion</source>
-        <translation>Modify configuration options for DeepOnion</translation>
+        <source>Modify configuration options for Triangles</source>
+        <translation>Modify configuration options for Triangles</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-202"/>
-        <source>DeepOnion</source>
-        <translation>DeepOnion</translation>
+        <source>Triangles</source>
+        <translation>Triangles</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -485,8 +485,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+180"/>
-        <source>&amp;About DeepOnion</source>
-        <translation>&amp;About DeepOnion</translation>
+        <source>&amp;About Triangles</source>
+        <translation>&amp;About Triangles</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -542,15 +542,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>DeepOnion client</source>
-        <translation>DeepOnion client</translation>
+        <source>Triangles client</source>
+        <translation>Triangles client</translation>
     </message>
     <message numerus="yes">
         <location line="+75"/>
-        <source>%n active connection(s) to DeepOnion network</source>
+        <source>%n active connection(s) to Triangles network</source>
         <translation>
-            <numerusform>%n active connection to DeepOnion network</numerusform>
-            <numerusform>%n active connections to DeepOnion network</numerusform>
+            <numerusform>%n active connection to Triangles network</numerusform>
+            <numerusform>%n active connections to Triangles network</numerusform>
         </translation>
     </message>
     <message>
@@ -593,12 +593,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-312"/>
-        <source>About DeepOnion card</source>
+        <source>About Triangles card</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about DeepOnion card</source>
+        <source>Show information about Triangles card</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -687,8 +687,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid DeepOnion address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid DeepOnion address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Triangles address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Triangles address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -759,8 +759,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. DeepOnion can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. DeepOnion can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Triangles can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Triangles can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -1079,8 +1079,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid DeepOnion address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid DeepOnion address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Triangles address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Triangles address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1098,8 +1098,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>DeepOnion-Qt</source>
-        <translation>DeepOnion-Qt</translation>
+        <source>Triangles-Qt</source>
+        <translation>Triangles-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1171,13 +1171,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start DeepOnion after logging in to the system.</source>
-        <translation>Automatically start DeepOnion after logging in to the system.</translation>
+        <source>Automatically start Triangles after logging in to the system.</source>
+        <translation>Automatically start Triangles after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start DeepOnion on system login</source>
-        <translation>&amp;Start DeepOnion on system login</translation>
+        <source>&amp;Start Triangles on system login</source>
+        <translation>&amp;Start Triangles on system login</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1196,8 +1196,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the DeepOnion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the DeepOnion client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Triangles client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Triangles client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1206,8 +1206,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the DeepOnion network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the DeepOnion network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the Triangles network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Triangles network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1281,8 +1281,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting DeepOnion.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting DeepOnion.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Triangles.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Triangles.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1296,8 +1296,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show DeepOnion addresses in the transaction list or not.</source>
-        <translation>Whether to show DeepOnion addresses in the transaction list or not.</translation>
+        <source>Whether to show Triangles addresses in the transaction list or not.</source>
+        <translation>Whether to show Triangles addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1343,8 +1343,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting DeepOnion.</source>
-        <translation>This setting will take effect after restarting DeepOnion.</translation>
+        <source>This setting will take effect after restarting Triangles.</source>
+        <translation>This setting will take effect after restarting Triangles.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1362,8 +1362,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DeepOnion network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the DeepOnion network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Triangles network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Triangles network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1578,8 +1578,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the DeepOnion-Qt help message to get a list with possible DeepOnion command-line options.</source>
-        <translation>Show the DeepOnion-Qt help message to get a list with possible DeepOnion command-line options.</translation>
+        <source>Show the Triangles-Qt help message to get a list with possible Triangles command-line options.</source>
+        <translation>Show the Triangles-Qt help message to get a list with possible Triangles command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1598,13 +1598,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>DeepOnion - Debug window</source>
-        <translation>DeepOnion - Debug window</translation>
+        <source>Triangles - Debug window</source>
+        <translation>Triangles - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>DeepOnion Core</source>
-        <translation>DeepOnion Core</translation>
+        <source>Triangles Core</source>
+        <translation>Triangles Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1613,8 +1613,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the DeepOnion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the DeepOnion debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Triangles debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Triangles debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1623,8 +1623,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the DeepOnion RPC console.</source>
-        <translation>Welcome to the DeepOnion RPC console.</translation>
+        <source>Welcome to the Triangles RPC console.</source>
+        <translation>Welcome to the Triangles RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1697,8 +1697,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 ONION</source>
-        <translation type="unfinished">123.456 ONION {0.00 ?}</translation>
+        <source>0.00 TRI</source>
+        <translation type="unfinished">123.456 TRI {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1767,8 +1767,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 ONION</source>
-        <translation>123.456 ONION</translation>
+        <source>123.456 TRI</source>
+        <translation>123.456 TRI</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1782,8 +1782,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a DeepOnion address</source>
-        <translation>Enter a DeepOnion address</translation>
+        <source>Enter a Triangles address</source>
+        <translation>Enter a Triangles address</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1882,7 +1882,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid DeepOnion address</source>
+        <source>WARNING: Invalid Triangles address</source>
         <translation></translation>
     </message>
     <message>
@@ -1956,8 +1956,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a DeepOnion address</source>
-        <translation>Enter a DeepOnion address</translation>
+        <source>Enter a Triangles address</source>
+        <translation>Enter a Triangles address</translation>
     </message>
 </context>
 <context>
@@ -2017,8 +2017,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this DeepOnion address</source>
-        <translation>Sign the message to prove you own this DeepOnion address</translation>
+        <source>Sign the message to prove you own this Triangles address</source>
+        <translation>Sign the message to prove you own this Triangles address</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2049,8 +2049,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified DeepOnion address</source>
-        <translation>Verify the message to ensure it was signed with the specified DeepOnion address</translation>
+        <source>Verify the message to ensure it was signed with the specified Triangles address</source>
+        <translation>Verify the message to ensure it was signed with the specified Triangles address</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2060,8 +2060,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a DeepOnion address </source>
-        <translation>Enter a DeepOnion address </translation>
+        <source>Enter a Triangles address </source>
+        <translation>Enter a Triangles address </translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2070,8 +2070,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter DeepOnion signature</source>
-        <translation>Enter DeepOnion signature</translation>
+        <source>Enter Triangles signature</source>
+        <translation>Enter Triangles signature</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2653,8 +2653,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>DeepOnion version</source>
-        <translation>DeepOnion version</translation>
+        <source>Triangles version</source>
+        <translation>Triangles version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2663,8 +2663,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or DeepOniond</source>
-        <translation>Send command to -server or DeepOniond</translation>
+        <source>Send command to -server or Trianglesd</source>
+        <translation>Send command to -server or Trianglesd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2683,13 +2683,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: DeepOnion.conf)</source>
-        <translation>Specify configuration file (default: DeepOnion.conf)</translation>
+        <source>Specify configuration file (default: Triangles.conf)</source>
+        <translation>Specify configuration file (default: Triangles.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: DeepOniond.pid)</source>
-        <translation>Specify pid file (default: DeepOniond.pid)</translation>
+        <source>Specify pid file (default: Trianglesd.pid)</source>
+        <translation>Specify pid file (default: Trianglesd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2838,8 +2838,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong DeepOnion will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong DeepOnion will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Triangles will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Triangles will not work properly.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3027,13 +3027,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=DeepOnionrpc
+rpcuser=Trianglesrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;DeepOnion Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Triangles Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -3159,13 +3159,13 @@ for example: alertnotify=echo %%s | mail -s &quot;DeepOnion Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  DeepOnion is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s.  DeepOnion is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Triangles is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s.  Triangles is probably already running.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>DeepOnion</source>
-        <translation>DeepOnion</translation>
+        <source>Triangles</source>
+        <translation>Triangles</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3199,13 +3199,13 @@ for example: alertnotify=echo %%s | mail -s &quot;DeepOnion Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of DeepOnion</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of DeepOnion</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Triangles</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Triangles</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart DeepOnion to complete</source>
-        <translation>Wallet needed to be rewritten: restart DeepOnion to complete</translation>
+        <source>Wallet needed to be rewritten: restart Triangles to complete</source>
+        <translation>Wallet needed to be rewritten: restart Triangles to complete</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3274,8 +3274,8 @@ for example: alertnotify=echo %%s | mail -s &quot;DeepOnion Alert&quot; admin@fo
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. DeepOnion is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. DeepOnion is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Triangles is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Triangles is probably already running.</translation>
     </message>
     <message>
         <location line="-97"/>
@@ -3341,36 +3341,36 @@ If the file does not exist, create it with owner-readable-only file permissions.
     <name>BlockchainDialog</name>
     <message>
         <location filename="../forms/blockchaindialog.ui" line="+38"/>
-        <source>The current DeepOnion blockchain you are using matches the hash registered in the Bitcoin blockchain at height 523,000. The matched hash is 99c0ec9462c28d7fa2c4beaf8af92b98a45692f2bec88d3af0837f4798fcff16, which is registered at Bitcoin blockchain at Block 521,681, with txid b8678ba1e6497cf7141636d3b373cfd1316c69054fdcf05a2cdca1dee4c17f73.</source>
-        <translation>The current DeepOnion blockchain you are using matches the hash registered in the Bitcoin blockchain at height 523,000. The matched hash is 99c0ec9462c28d7fa2c4beaf8af92b98a45692f2bec88d3af0837f4798fcff16, which is registered at Bitcoin blockchain at Block 521,681, with txid b8678ba1e6497cf7141636d3b373cfd1316c69054fdcf05a2cdca1dee4c17f73.</translation>
+        <source>The current Triangles blockchain you are using matches the hash registered in the Bitcoin blockchain at height 523,000. The matched hash is 99c0ec9462c28d7fa2c4beaf8af92b98a45692f2bec88d3af0837f4798fcff16, which is registered at Bitcoin blockchain at Block 521,681, with txid b8678ba1e6497cf7141636d3b373cfd1316c69054fdcf05a2cdca1dee4c17f73.</source>
+        <translation>The current Triangles blockchain you are using matches the hash registered in the Bitcoin blockchain at height 523,000. The matched hash is 99c0ec9462c28d7fa2c4beaf8af92b98a45692f2bec88d3af0837f4798fcff16, which is registered at Bitcoin blockchain at Block 521,681, with txid b8678ba1e6497cf7141636d3b373cfd1316c69054fdcf05a2cdca1dee4c17f73.</translation>
     </message>
     <message>
         <location line="+51"/>
-        <source>DeepOnion blockchain is already a very secure immutable database, as it is guaranteed by close to 1000 nodes in the network. However, to further guarantee that everything in the DeepOnion blockchain is immutable, we periodically register the DeepOnion blockchain hash in the Bitcoin blockchain. Bitcoin blockchain is the most secure immutable database in the world, with over 10,000 nodes running in about 100 different countries.</source>    
-        <translation>DeepOnion blockchain is already a very secure immutable database, as it is guaranteed by close to 1000 nodes in the network. However, to further guarantee that everything in the DeepOnion blockchain is immutable, we periodically register the DeepOnion blockchain hash in the Bitcoin blockchain. Bitcoin blockchain is the most secure immutable database in the world, with over 10,000 nodes running in about 100 different countries.</translation>
+        <source>Triangles blockchain is already a very secure immutable database, as it is guaranteed by close to 1000 nodes in the network. However, to further guarantee that everything in the Triangles blockchain is immutable, we periodically register the Triangles blockchain hash in the Bitcoin blockchain. Bitcoin blockchain is the most secure immutable database in the world, with over 10,000 nodes running in about 100 different countries.</source>    
+        <translation>Triangles blockchain is already a very secure immutable database, as it is guaranteed by close to 1000 nodes in the network. However, to further guarantee that everything in the Triangles blockchain is immutable, we periodically register the Triangles blockchain hash in the Bitcoin blockchain. Bitcoin blockchain is the most secure immutable database in the world, with over 10,000 nodes running in about 100 different countries.</translation>
     </message>
     <message>   
         <location line="+51"/>
-        <source>When the DeepOnion wallet starts, it automatically verifies its blockchain hash up to the latest checkpoint where it is registered in the Bitcoin blockchain. When the hash matches, it means that the DeepOnion blockchain (up to the latest checkpoint) is authentic and thus all the file hashes registered by DeepVault is also guaranteed by Bitcoin blockchain! Thus with a much lower cost, you can register your file with the world most secure immutable database and check its authencity later at any time by Deepvault.</source>
-        <translation>When the DeepOnion wallet starts, it automatically verifies its blockchain hash up to the latest checkpoint where it is registered in the Bitcoin blockchain. When the hash matches, it means that the DeepOnion blockchain (up to the latest checkpoint) is authentic and thus all the file hashes registered by DeepVault is also guaranteed by Bitcoin blockchain! Thus with a much lower cost, you can register your file with the world most secure immutable database and check its authencity later at any time by Deepvault.</translation>    
+        <source>When the Triangles wallet starts, it automatically verifies its blockchain hash up to the latest checkpoint where it is registered in the Bitcoin blockchain. When the hash matches, it means that the Triangles blockchain (up to the latest checkpoint) is authentic and thus all the file hashes registered by DeepVault is also guaranteed by Bitcoin blockchain! Thus with a much lower cost, you can register your file with the world most secure immutable database and check its authencity later at any time by Deepvault.</source>
+        <translation>When the Triangles wallet starts, it automatically verifies its blockchain hash up to the latest checkpoint where it is registered in the Bitcoin blockchain. When the hash matches, it means that the Triangles blockchain (up to the latest checkpoint) is authentic and thus all the file hashes registered by DeepVault is also guaranteed by Bitcoin blockchain! Thus with a much lower cost, you can register your file with the world most secure immutable database and check its authencity later at any time by Deepvault.</translation>    
     </message>
      <message>
         <location line="+51"/>
-        <source>If your blockchain is not matched, then it mean you are on a forked chain, you need to resynchronize with the DeepOnion network in order to be on the right blockchain (this protects your DeepOnion assets too).</source>
-        <translation>If your blockchain is not matched, then it mean you are on a forked chain, you need to resynchronize with the DeepOnion network in order to be on the right blockchain (this protects your DeepOnion assets too).</translation>
+        <source>If your blockchain is not matched, then it mean you are on a forked chain, you need to resynchronize with the Triangles network in order to be on the right blockchain (this protects your Triangles assets too).</source>
+        <translation>If your blockchain is not matched, then it mean you are on a forked chain, you need to resynchronize with the Triangles network in order to be on the right blockchain (this protects your Triangles assets too).</translation>
     </message>  
 </context>
 <context>
     <name>WalletModel</name>
     <message>
         <location filename="../walletmodel.cpp" line="+648"/>
-        <source>The DeepOnion blockchain is not fully sychronized.</source>
-        <translation>The DeepOnion blockchain is not fully sychronized.</translation>
+        <source>The Triangles blockchain is not fully sychronized.</source>
+        <translation>The Triangles blockchain is not fully sychronized.</translation>
     </message>
         <message>
         <location line="+650"/>
-        <source>The DeepOnion blockchain sychronized, but it does not match the latest checkpoint hash at Block </source>
-        <translation>The DeepOnion blockchain sychronized, but it does not match the latest checkpoint hash at Block </translation>
+        <source>The Triangles blockchain sychronized, but it does not match the latest checkpoint hash at Block </source>
+        <translation>The Triangles blockchain sychronized, but it does not match the latest checkpoint hash at Block </translation>
     </message>
      <message>
         <location line="+651"/>
@@ -3379,13 +3379,13 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+652"/>
-        <source>So you are most likely on a forked chain, please resync with official peers at https://deeponion.org.</source>
-        <translation>So you are most likely on a forked chain, please resync with official peers at https://deeponion.org.</translation>
+        <source>So you are most likely on a forked chain, please resync with official peers at https://triangles.org.</source>
+        <translation>So you are most likely on a forked chain, please resync with official peers at https://triangles.org.</translation>
     </message>
     <message>
         <location line="+654"/>
-        <source>The DeepOnion blockchain is fully sychronized. It is authentic! It is guaranteed by Bitcoin blockchain </source>
-        <translation>The DeepOnion blockchain is fully sychronized. It is authentic! It is guaranteed by Bitcoin blockchain </translation>
+        <source>The Triangles blockchain is fully sychronized. It is authentic! It is guaranteed by Bitcoin blockchain </source>
+        <translation>The Triangles blockchain is fully sychronized. It is authentic! It is guaranteed by Bitcoin blockchain </translation>
     </message>
     <message>
         <location line="+655"/>
@@ -3394,8 +3394,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+667"/>
-        <source>We can't verify the DeepOnion blockchain as it is not fully sychronized yet. </source>
-        <translation>We can't verify the DeepOnion blockchain as it is not fully sychronized yet. </translation>
+        <source>We can't verify the Triangles blockchain as it is not fully sychronized yet. </source>
+        <translation>We can't verify the Triangles blockchain as it is not fully sychronized yet. </translation>
     </message>
     <message>
         <location line="+668"/>
@@ -3404,8 +3404,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+674"/>
-        <source>The current DeepOnion blockchain you are using matches the hash registered in the Bitcoin blockchain at height </source>
-        <translation>The current DeepOnion blockchain you are using matches the hash registered in the Bitcoin blockchain at height </translation>
+        <source>The current Triangles blockchain you are using matches the hash registered in the Bitcoin blockchain at height </source>
+        <translation>The current Triangles blockchain you are using matches the hash registered in the Bitcoin blockchain at height </translation>
     </message>
     <message>
         <location line="+675"/>

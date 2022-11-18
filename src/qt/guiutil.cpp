@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018 The DeepOnion developers
+// Copyright (c) 2017-2018 The Triangles developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -191,7 +191,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // NovaCoin: check prefix
-    if (uri.scheme() != QString("DeepOnion"))
+    if (uri.scheme() != QString("Triangles"))
         return false;
 
     SendCoinsRecipient rv;
@@ -237,13 +237,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert DeepOnion:// to DeepOnion:
+    // Convert Triangles:// to Triangles:
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if (uri.startsWith("DeepOnion://"))
+    if (uri.startsWith("Triangles://"))
     {
-        uri.replace(0, 12, "DeepOnion:");
+        uri.replace(0, 12, "Triangles:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -361,7 +361,7 @@ void openConfigfile()
 {
     boost::filesystem::path pathConfig = GetConfigFile();
 
-    /* Open deeponion.conf with the associated application */
+    /* Open triangles.conf with the associated application */
     if (boost::filesystem::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(QString::fromStdString(pathConfig.string())));
 }
@@ -391,7 +391,7 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "DeepOnion.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Triangles.lnk";
 }
 
 bool GetStartOnSystemStartup()
@@ -475,7 +475,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "DeepOnion.desktop";
+    return GetAutostartDir() / "Triangles.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -516,7 +516,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=DeepOnion\n";
+        optionFile << "Name=Triangles\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -552,10 +552,10 @@ QString boostPathToQString(const fs::path &path)
 
 HelpMessageBox::HelpMessageBox(QWidget *parent) : QMessageBox(parent)
 {
-    header = tr("DeepOnion-Qt") + " " + tr("version") + " " +
+    header = tr("Triangles-Qt") + " " + tr("version") + " " +
              QString::fromStdString(FormatFullVersion()) + "\n\n" +
              tr("Usage:") + "\n" +
-             "  DeepOnion-qt [" + tr("command-line options") + "]                     " + "\n";
+             "  Triangles-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -564,7 +564,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) : QMessageBox(parent)
                 "  -min                   " + tr("Start minimized") + "\n" +
                 "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("DeepOnion-Qt"));
+    setWindowTitle(tr("Triangles-Qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));

@@ -1,9 +1,9 @@
-Building DeepOnion
+Building Triangles
 
-See doc/readme-qt.rst for instructions on building DeepOnion Qt,
+See doc/readme-qt.rst for instructions on building Triangles Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of DeepOnion.
+implementation of Triangles.
 
-See doc/build-*.txt for instructions on building DeepOniond,
+See doc/build-*.txt for instructions on building Trianglesd,
 the intended-for-services, no-graphical-interface, reference
-implementation of DeepOnion.
+implementation of Triangles.

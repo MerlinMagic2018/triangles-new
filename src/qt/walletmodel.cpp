@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The DeepOnion Developers
+// Copyright (c) 2018 The Triangles Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -641,15 +641,15 @@ QString WalletModel::getBlockchainStatusText()
 	QString text;
 
     if(blockchainStatus == -2)
-        text = QString("The authenticity of the DeepOnion blockchain has not yet been verified.");
+        text = QString("The authenticity of the Triangles blockchain has not yet been verified.");
     else if(blockchainStatus == -1)
-        text = QString("The DeepOnion blockchain is not fully sychronized.");
+        text = QString("The Triangles blockchain is not fully sychronized.");
     else if(blockchainStatus == 0)
-        text = QString("The DeepOnion blockchain synchronized, but it does not match the latest checkpoint hash at Block ")
+        text = QString("The Triangles blockchain synchronized, but it does not match the latest checkpoint hash at Block ")
             + QString::number(CWallet::LAST_REGISTERED_BLOCK_HEIGHT) + QString(" (which is registered and guaranteed by the Bitcoin blockchain). ")
-            + QString("So you are most likely on a forked chain, please resync with official peers at https://deeponion.org.");
+            + QString("So you are most likely on a forked chain, please resync with official peers at https://triangles.org.");
     else
-        text = QString("The DeepOnion blockchain is fully synchronized. It is authentic! It is guaranteed by the Bitcoin blockchain ")
+        text = QString("The Triangles blockchain is fully synchronized. It is authentic! It is guaranteed by the Bitcoin blockchain ")
             + QString("(the most secure immutable database in the world) up to Block ")
             + QString::number(CWallet::LAST_REGISTERED_BLOCK_HEIGHT) + QString(".");
 
@@ -662,17 +662,17 @@ QString WalletModel::getBlockchainStatusDetailsText()
     QString text;
 
     if(blockchainStatus == -2)
-        text = QString("The authenticity of the DeepOnion blockchain has not yet been verified. ")
+        text = QString("The authenticity of the Triangles blockchain has not yet been verified. ")
             + QString("Please change your settings in the conf file in order to verify it");
     else if(blockchainStatus == -1)
-        text = QString("We can't verify the DeepOnion blockchain as it is not fully sychronized yet. ")
+        text = QString("We can't verify the Triangles blockchain as it is not fully sychronized yet. ")
             + QString("Please wait until it is fully synchronized and check back.");
     else if(blockchainStatus == 0)
-        text = QString("The DeepOnion blockchain sychronized, but it does not match the latest checkpoint hash at Block ")
+        text = QString("The Triangles blockchain sychronized, but it does not match the latest checkpoint hash at Block ")
             + QString::number(CWallet::LAST_REGISTERED_BLOCK_HEIGHT) + QString(" (which is registered and guaranteed by the Bitcoin blockchain). ")
-            + QString("So you are most likely on a forked chain, please resync with official peers at https://deeponion.org.");
+            + QString("So you are most likely on a forked chain, please resync with official peers at https://triangles.org.");
     else
-        text = QString("The current DeepOnion blockchain you are using matches the hash registered in the Bitcoin blockchain at height ")
+        text = QString("The current Triangles blockchain you are using matches the hash registered in the Bitcoin blockchain at height ")
             + QString::number(CWallet::LAST_REGISTERED_BTC_BLOCK_HEIGHT) + QString(". The matched hash is ") 
             + QString::fromUtf8(CWallet::LAST_REGISTERED_BLOCKCHAIN_HASH.c_str()) + QString(", which is registered at Bitcoin blockchain at Block ")
             + QString::number(CWallet::LAST_REGISTERED_BTC_BLOCK_HEIGHT) + QString(", with txid ")
@@ -714,7 +714,7 @@ void WalletModel::scanBlockchainValidaty(QWidget* pWidget)
     int count = 0;
 	int maxBlockNum = nBestHeight / 1000;
 
-	QProgressDialog progress(QString("Checking the DeepOnion Blockchain..."), QString("Cancel"), 0, maxBlockNum, pWidget);
+	QProgressDialog progress(QString("Checking the Triangles Blockchain..."), QString("Cancel"), 0, maxBlockNum, pWidget);
 	progress.setWindowModality(Qt::WindowModal);
 	progress.setMinimumHeight(120);
 	progress.setMaximumHeight(120);

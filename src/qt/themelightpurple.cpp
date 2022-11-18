@@ -164,5 +164,5 @@ void ThemeLightPurple::init()
     subSectionTitleStyle = "color: #FFFFFF; padding-left: 10px; background-color: " + title_background + ";";
     roundedButtonStyle = "background-color: " + title_background + ";color: white;border-radius:14px;border-width:0px; margin-left: 8px;";
 
-    deepOnionLogo = ":/icons/DeepOnionLogoPurple";
+    deepOnionLogo = ":/icons/TrianglesLogoPurple";
 }

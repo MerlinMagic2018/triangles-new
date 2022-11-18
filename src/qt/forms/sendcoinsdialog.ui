@@ -472,7 +472,7 @@
                       <enum>Qt::ActionsContextMenu</enum>
                      </property>
                      <property name="text">
-                      <string>0.00 ONION</string>
+                      <string>0.00 TRI</string>
                      </property>
                      <property name="textInteractionFlags">
                       <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -558,7 +558,7 @@
                       <enum>Qt::ActionsContextMenu</enum>
                      </property>
                      <property name="text">
-                      <string>0.00 ONION</string>
+                      <string>0.00 TRI</string>
                      </property>
                      <property name="textInteractionFlags">
                       <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -644,7 +644,7 @@
                       <enum>Qt::ActionsContextMenu</enum>
                      </property>
                      <property name="text">
-                      <string>0.00 ONION</string>
+                      <string>0.00 TRI</string>
                      </property>
                      <property name="textInteractionFlags">
                       <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -676,7 +676,7 @@
                       <enum>Qt::ActionsContextMenu</enum>
                      </property>
                      <property name="text">
-                      <string>0.00 ONION</string>
+                      <string>0.00 TRI</string>
                      </property>
                      <property name="textInteractionFlags">
                       <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -990,7 +990,7 @@
                    <string notr="true">color: #FFFFFF;</string>
                   </property>
                   <property name="text">
-                   <string>123.456 ONION</string>
+                   <string>123.456 TRI</string>
                   </property>
                   <property name="textInteractionFlags">
                    <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

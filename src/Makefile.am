@@ -39,7 +39,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += DeepOniond
+  bin_PROGRAMS += Trianglesd
 endif
 
 .PHONY: FORCE
@@ -213,7 +213,7 @@ endif
 
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 # bitcoind binary #
-DeepOniond_LDADD = \
+Trianglesd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -223,15 +223,15 @@ DeepOniond_LDADD = \
 if HAVE_SSE2
 libbitcoin_sse2_a_SOURCES = scrypt-sse2.cpp
 libbitcoin_sse2_a_CPPFLAGS = $(BITCOIN_INCLUDES) -msse2 -mstackrealign
-DeepOniond_LDADD += libbitcoin_sse2.a
+Trianglesd_LDADD += libbitcoin_sse2.a
 endif
 
 if ENABLE_WALLET
-DeepOniond_LDADD += libbitcoin_wallet.a
+Trianglesd_LDADD += libbitcoin_wallet.a
 endif
-DeepOniond_SOURCES = daemon.cpp
+Trianglesd_SOURCES = daemon.cpp
 
-DeepOniond_LDADD += \
+Trianglesd_LDADD += \
   ../tor/src/or/libtor.a \
   ../tor/src/common/libor.a \
   ../tor/src/common/libor-ctime.a \
@@ -247,8 +247,8 @@ DeepOniond_LDADD += \
   $(LIBCAP_LIBS) \
   $(ZLIB_LIBS)
 
-DeepOniond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(LIBEVENT_LDFLAGS) $(LIBSECCOMP_LDFLAGS) $(LIBCAP_LDFLAGS) $(ZLIB_LDFLAGS)
-DeepOniond_CPPFLAGS = $(BITCOIN_INCLUDES) $(LIBSECCOMP_CFLAGS) $(LIBCAP_CFLAGS) $(ZLIB_CFLAGS)
+Trianglesd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(LIBEVENT_LDFLAGS) $(LIBSECCOMP_LDFLAGS) $(LIBCAP_LDFLAGS) $(ZLIB_LDFLAGS)
+Trianglesd_CPPFLAGS = $(BITCOIN_INCLUDES) $(LIBSECCOMP_CFLAGS) $(LIBCAP_CFLAGS) $(ZLIB_CFLAGS)
 
 CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno
 
