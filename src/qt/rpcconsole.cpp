@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Triangles Developers
+// Copyright (c) 2018 The DeepOnion Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -491,7 +491,7 @@ void RPCConsole::clear(bool clearHistory)
        ).arg( QString("%1pt").arg(consoleFontSize))
     );
 
-    message(CMD_REPLY, (tr("Welcome to the Triangles RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the DeepOnion RPC console.") + "<br>" +
                         tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
                         tr("Type <b>help</b> for an overview of available commands.")), true);
 }

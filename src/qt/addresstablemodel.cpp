@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018 The Triangles Developers
+// Copyright (c) 2017-2018 The DeepOnion Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -346,7 +346,7 @@ QModelIndex AddressTableModel::index(int row, int column, const QModelIndex &par
 
 void AddressTableModel::updateEntry(const QString &address, const QString &label, bool isMine, int status)
 {
-    // Update address book model from Triangles
+    // Update address book model from DeepOnion
     priv->updateEntry(address, label, isMine, status);
 }
 

@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2017-2018 The Triangles Developers
+// Copyright (c) 2017-2018 The DeepOnion Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -160,7 +160,7 @@ Value getnewaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getnewaddress [account]\n"
-            "Returns a new Triangles address for receiving payments.  "
+            "Returns a new DeepOnion address for receiving payments.  "
             "If [account] is specified (recommended), it is added to the address book "
             "so payments received with the address will be credited to [account].");
 
@@ -227,7 +227,7 @@ Value getaccountaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "getaccountaddress <account>\n"
-            "Returns the current Triangles address for receiving payments to this account.");
+            "Returns the current DeepOnion address for receiving payments to this account.");
 
     // Parse the account first so we don't generate a key if there's an error
     string strAccount = AccountFromValue(params[0]);
@@ -245,12 +245,12 @@ Value setaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount <Trianglesaddress> <account>\n"
+            "setaccount <DeepOnionaddress> <account>\n"
             "Sets the account associated with the given address.");
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Triangles address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DeepOnion address");
 
 
     string strAccount;
@@ -275,12 +275,12 @@ Value getaccount(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount <Trianglesaddress>\n"
+            "getaccount <DeepOnionaddress>\n"
             "Returns the account associated with the given address.");
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Triangles address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DeepOnion address");
 
     string strAccount;
     map<CTxDestination, string>::iterator mi = pwalletMain->mapAddressBook.find(address.Get());
@@ -315,13 +315,13 @@ Value sendtoaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 5)
         throw runtime_error(
-            "sendtoaddress <Trianglesaddress> <amount> [narration] [comment] [comment-to]\n"
+            "sendtoaddress <DeepOnionaddress> <amount> [narration] [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.000001" 
             + HelpRequiringPassphrase());
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Triangles address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DeepOnion address");
 
     // Amount
     int64 nAmount = AmountFromValue(params[1]);
@@ -389,7 +389,7 @@ Value signmessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage <Trianglesaddress> <message>\n"
+            "signmessage <DeepOnionaddress> <message>\n"
             "Sign a message with the private key of an address");
 
     EnsureWalletIsUnlocked();
@@ -424,7 +424,7 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage <Trianglesaddress> <signature> <message>\n"
+            "verifymessage <DeepOnionaddress> <signature> <message>\n"
             "Verify a signed message");
 
     string strAddress = params[0].get_str();
@@ -460,14 +460,14 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress <Trianglesaddress> [minconf=1]\n"
-            "Returns the total amount received by <Trianglesaddress> in transactions with at least [minconf] confirmations.");
+            "getreceivedbyaddress <DeepOnionaddress> [minconf=1]\n"
+            "Returns the total amount received by <DeepOnionaddress> in transactions with at least [minconf] confirmations.");
 
     // Bitcoin address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
     CScript scriptPubKey;
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Triangles address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DeepOnion address");
     scriptPubKey.SetDestination(address.Get());
     if (!IsMine(*pwalletMain,scriptPubKey))
         return (double)0.0;
@@ -686,14 +686,14 @@ Value sendfrom(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 7)
         throw runtime_error(
-            "sendfrom <fromaccount> <toTrianglesAddress> <amount> [minconf=1] [narration] [comment] [comment-to]\n"
+            "sendfrom <fromaccount> <toDeepOnionAddress> <amount> [minconf=1] [narration] [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.000001" 
             + HelpRequiringPassphrase());
 
     string strAccount = AccountFromValue(params[0]);
     CBitcoinAddress address(params[1].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Triangles address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid DeepOnion address");
     int64 nAmount = AmountFromValue(params[2]);
 
     if (nAmount < MIN_TXOUT_AMOUNT)
@@ -759,7 +759,7 @@ Value sendmany(const Array& params, bool fHelp)
     {
         CBitcoinAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Triangles address: ")+s.name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid DeepOnion address: ")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);
@@ -807,7 +807,7 @@ Value addmultisigaddress(const Array& params, bool fHelp)
     {
         string msg = "addmultisigaddress <nrequired> <'[\"key\",\"key\"]'> [account]\n"
                      "Add a nrequired-to-sign multisignature address to the wallet\"\n"
-                     "each key is a Triangles address or hex-encoded public key\n"
+                     "each key is a DeepOnion address or hex-encoded public key\n"
                      "If [account] is specified, assign address to [account].";
         throw runtime_error(msg);
     }
@@ -1413,7 +1413,7 @@ Value keypoolrefill(const Array& params, bool fHelp)
 void ThreadTopUpKeyPool(void* parg)
 {
     // Make this thread recognisable as the key-topping-up thread
-    RenameThread("Triangles-key-top");
+    RenameThread("DeepOnion-key-top");
 
     pwalletMain->TopUpKeyPool();
 }
@@ -1421,7 +1421,7 @@ void ThreadTopUpKeyPool(void* parg)
 void ThreadCleanWalletPassphrase(void* parg)
 {
     // Make this thread recognisable as the wallet relocking thread
-    RenameThread("Triangles-lock-wa");
+    RenameThread("DeepOnion-lock-wa");
 
     int64_t nMyWakeTime = GetTimeMillis() + *((int64_t*)parg) * 1000;
 
@@ -1497,7 +1497,7 @@ Value walletpassphrase(const Array& params, bool fHelp)
     int64_t* pnSleepTime = new int64_t(params[1].get_int64());
     NewThread(ThreadCleanWalletPassphrase, pnSleepTime);
 
-    // Triangles: if user OS account compromised prevent trivial sendmoney commands
+    // DeepOnion: if user OS account compromised prevent trivial sendmoney commands
     if (params.size() > 2)
         fWalletUnlockStakingOnly = params[2].get_bool();
     else
@@ -1591,7 +1591,7 @@ Value encryptwallet(const Array& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; Triangles server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; DeepOnion server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
 }
 
 class DescribeAddressVisitor : public boost::static_visitor<Object>
@@ -1643,8 +1643,8 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress <Trianglesaddress>\n"
-            "Return information about <Trianglesaddress>.");
+            "validateaddress <DeepOnionaddress>\n"
+            "Return information about <DeepOnionaddress>.");
 
     CBitcoinAddress address(params[0].get_str());
     bool isValid = address.IsValid();
@@ -1673,8 +1673,8 @@ Value validatepubkey(const Array& params, bool fHelp)
 {
     if (fHelp || !params.size() || params.size() > 2)
         throw runtime_error(
-            "validatepubkey <Trianglespubkey>\n"
-            "Return information about <Trianglespubkey>.");
+            "validatepubkey <DeepOnionpubkey>\n"
+            "Return information about <DeepOnionpubkey>.");
 
     std::vector<unsigned char> vchPubKey = ParseHex(params[0].get_str());
     CPubKey pubKey(vchPubKey);
@@ -1707,7 +1707,7 @@ Value validatepubkey(const Array& params, bool fHelp)
     return ret;
 }
 
-// Triangles: reserve balance from being staked for network protection
+// DeepOnion: reserve balance from being staked for network protection
 Value reservebalance(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 2)
@@ -1746,7 +1746,7 @@ Value reservebalance(const Array& params, bool fHelp)
 }
 
 
-// Triangles: check wallet integrity
+// DeepOnion: check wallet integrity
 Value checkwallet(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 0)
@@ -1769,7 +1769,7 @@ Value checkwallet(const Array& params, bool fHelp)
 }
 
 
-// Triangles: repair wallet
+// DeepOnion: repair wallet
 Value repairwallet(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 0)
@@ -1791,7 +1791,7 @@ Value repairwallet(const Array& params, bool fHelp)
     return result;
 }
 
-// Triangles: resend unconfirmed wallet transactions
+// DeepOnion: resend unconfirmed wallet transactions
 Value resendtx(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 1)
@@ -1805,7 +1805,7 @@ Value resendtx(const Array& params, bool fHelp)
     return Value::null;
 }
 
-// Triangles: make a public-private key pair
+// DeepOnion: make a public-private key pair
 Value makekeypair(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 1)
@@ -1835,7 +1835,7 @@ Value getnewstealthaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getnewstealthaddress [label]\n"
-            "Returns a new Triangles stealth address for receiving payments anonymously.  ");
+            "Returns a new DeepOnion stealth address for receiving payments anonymously.  ");
 
     if (pwalletMain->IsLocked())
         throw runtime_error("Failed: Wallet must be unlocked.");
@@ -2068,7 +2068,7 @@ Value sendtostealthaddress(const Array &params, bool fHelp)
 
     if (!sxAddr.SetEncoded(sEncoded))
     {
-        result.push_back(Pair("result", "Invalid Triangles stealth address."));
+        result.push_back(Pair("result", "Invalid DeepOnion stealth address."));
         return result;
     };
 
@@ -2208,13 +2208,13 @@ Value getnettotals(const Array &params, bool fHelp)
     return obj;
 }
 
-// Triangles: Verify blockchain authenticity
+// DeepOnion: Verify blockchain authenticity
 Value verifyblockchain(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "verifyblockchain\n"
-            "Verifies the authenticity of the Triangles blockchain.\n"
+            "Verifies the authenticity of the DeepOnion blockchain.\n"
             "This action can take some time (minutes)");
 
     pwalletMain->ScanBlockchainForHash();
@@ -2224,15 +2224,15 @@ Value verifyblockchain(const Array& params, bool fHelp)
     string result = "";
 
     if(blockchainStatus == -2)
-        result = "The authenticity of the Triangles blockchain has not yet been verified.";
+        result = "The authenticity of the DeepOnion blockchain has not yet been verified.";
     else if(blockchainStatus == -1)
-        result = "The Triangles blockchain is not fully sychronized.";
+        result = "The DeepOnion blockchain is not fully sychronized.";
     else if(blockchainStatus == 0)
-        result = "The Triangles blockchain synchronized, but it does not match the latest checkpoint hash at Block " + 
+        result = "The DeepOnion blockchain synchronized, but it does not match the latest checkpoint hash at Block " + 
 			boost::lexical_cast<std::string>(CWallet::LAST_REGISTERED_BLOCK_HEIGHT) + 
-			" (which is registered and guaranteed by the Bitcoin blockchain). So you are most likely on a forked chain, please resync with official peers at https://triangles.org.";
+			" (which is registered and guaranteed by the Bitcoin blockchain). So you are most likely on a forked chain, please resync with official peers at https://deeponion.org.";
     else
-        result = "The Triangles blockchain is fully synchronized. It is authentic! It is guaranteed by the Bitcoin blockchain (the most secure immutable database in the world) up to Block " 
+        result = "The DeepOnion blockchain is fully synchronized. It is authentic! It is guaranteed by the Bitcoin blockchain (the most secure immutable database in the world) up to Block " 
         		+ boost::lexical_cast<std::string>(CWallet::LAST_REGISTERED_BLOCK_HEIGHT) + ".";
 
     obj.push_back(Pair("result", result));

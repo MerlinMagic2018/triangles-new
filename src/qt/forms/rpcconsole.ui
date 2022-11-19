@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Triangles - Debug window</string>
+   <string>DeepOnion - Debug window</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -122,7 +122,7 @@
        <item row="18" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the Triangles debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the DeepOnion debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -135,7 +135,7 @@
        <item row="20" column="0">
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
-          <string>Show the Triangles-Qt help message to get a list with possible Triangles command-line options.</string>
+          <string>Show the DeepOnion-Qt help message to get a list with possible DeepOnion command-line options.</string>
          </property>
          <property name="text">
           <string>&amp;Show</string>
@@ -272,7 +272,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Triangles Core</string>
+          <string>DeepOnion Core</string>
          </property>
         </widget>
        </item>
@@ -364,7 +364,7 @@
           <string notr="true">color: rgb(0, 170, 0);</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;The Triangles blockchain is not fully sychronized.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;The DeepOnion blockchain is not fully sychronized.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::RichText</enum>

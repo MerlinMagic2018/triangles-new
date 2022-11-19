@@ -1,2 +1,2 @@
 # Requires specific db version
-triangles-qt: build-depends-on-versioned-berkeley-db
+deeponion-qt: build-depends-on-versioned-berkeley-db

@@ -1,9 +1,9 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: triangles
-Source: https://github.com/triangles/triangles
+Upstream-Name: deeponion
+Source: https://github.com/deeponion/deeponion
 
 Files: *
-Copyright: 2018 Triangles <info@triangles.org>
+Copyright: 2018 DeepOnion <info@deeponion.org>
 License: MIT
 
 Files: debian/*

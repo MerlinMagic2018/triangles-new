@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018 The Triangles developers
+// Copyright (c) 2017-2018 The DeepOnion developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -57,7 +57,7 @@ QString loadStyleSheet();
 void setupAddressWidget(QLineEdit *widget, QWidget *parent);
 void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
-// Parse "Triangles:" URI into recipient object, return true on successful parsing
+// Parse "DeepOnion:" URI into recipient object, return true on successful parsing
 // See Bitcoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
@@ -111,7 +111,7 @@ bool isObscured(QWidget *w);
 // Open debug.log
 void openDebugLogfile();
 
-// Open Triangles.conf
+// Open DeepOnion.conf
 void openConfigfile();
 
 

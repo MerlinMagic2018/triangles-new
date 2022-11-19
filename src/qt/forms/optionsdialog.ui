@@ -128,10 +128,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start Triangles after logging in to the system.</string>
+          <string>Automatically start DeepOnion after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Triangles on system login</string>
+          <string>&amp;Start DeepOnion on system login</string>
          </property>
         </widget>
        </item>
@@ -168,7 +168,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the Triangles client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the DeepOnion client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -178,7 +178,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the Triangles network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+          <string>Connect to the DeepOnion network through a SOCKS proxy (e.g. when connecting through Tor).</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy:</string>
@@ -355,7 +355,7 @@
          <item>
           <widget class="QValueComboBox" name="theme">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting Triangles.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting DeepOnion.</string>
            </property>
           </widget>
          </item>
@@ -379,7 +379,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting Triangles.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting DeepOnion.</string>
            </property>
           </widget>
          </item>
@@ -412,7 +412,7 @@
        <item>
         <widget class="QCheckBox" name="displayAddresses">
          <property name="toolTip">
-          <string>Whether to show Triangles addresses in the transaction list or not.</string>
+          <string>Whether to show DeepOnion addresses in the transaction list or not.</string>
          </property>
          <property name="text">
           <string>&amp;Display addresses in transaction list</string>
@@ -432,7 +432,7 @@
        <item>
         <widget class="QCheckBox" name="printDebugLog">
          <property name="toolTip">
-          <string>If enabled Triangles wallet will print all debug messages to debug.log file.</string>
+          <string>If enabled DeepOnion wallet will print all debug messages to debug.log file.</string>
          </property>
          <property name="text">
           <string>Print debug messages to log file</string>

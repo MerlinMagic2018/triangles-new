@@ -10,8 +10,8 @@ src/cmake-build-debug/
 *.tar.gz
 
 *.exe
-Triangles-qt
-Trianglesd
+DeepOnion-qt
+DeepOniond
 
 # autoreconf
 Makefile.in
@@ -34,7 +34,7 @@ config.log
 config.status
 configure
 libtool
-src/config/triangles-config.h
+src/config/deeponion-config.h
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -118,7 +118,7 @@ db-4.8.30.NC/
 
 Makefile.Debug
 Makefile.Release
-triangles-qt_plugin_import.cpp
-object_script.Triangles-qt.Debug
-object_script.Triangles-qt.Release
+deeponion-qt_plugin_import.cpp
+object_script.DeepOnion-qt.Debug
+object_script.DeepOnion-qt.Release
 release/

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2017-2018 The Triangles Developers
+// Copyright (c) 2017-2018 The DeepOnion Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -94,7 +94,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // Triangles: synchronized checkpoint (centrally broadcasted)
+    // DeepOnion: synchronized checkpoint (centrally broadcasted)
     uint256 hashSyncCheckpoint = 0;
     uint256 hashPendingCheckpoint = 0;
     CSyncCheckpoint checkpointMessage;
@@ -102,7 +102,7 @@ namespace Checkpoints
     uint256 hashInvalidCheckpoint = 0;
     CCriticalSection cs_hashSyncCheckpoint;
 
-    // Triangles: get last synchronized checkpoint
+    // DeepOnion: get last synchronized checkpoint
     CBlockIndex* GetLastSyncCheckpoint()
     {
         LOCK(cs_hashSyncCheckpoint);
@@ -113,7 +113,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // Triangles: only descendant of current sync-checkpoint is allowed
+    // DeepOnion: only descendant of current sync-checkpoint is allowed
     bool ValidateSyncCheckpoint(uint256 hashCheckpoint)
     {
         if (!mapBlockIndex.count(hashSyncCheckpoint))
@@ -266,7 +266,7 @@ namespace Checkpoints
         return false;
     }
 
-    // Triangles: reset synchronized checkpoint to last hardened checkpoint
+    // DeepOnion: reset synchronized checkpoint to last hardened checkpoint
     bool ResetSyncCheckpoint()
     {
         LOCK(cs_hashSyncCheckpoint);
@@ -377,12 +377,12 @@ namespace Checkpoints
     }
 }
 
-// Triangles: sync-checkpoint master key
+// DeepOnion: sync-checkpoint master key
 const std::string CSyncCheckpoint::strMasterPubKey = "040ca85222159767e5ef1e9640418ddaf37990c3c62e13f5d52cc9620ef1597d7571cf35f670c176f1f28fabcf371d0eadfee616c0ee5385600eaeba3482f3bac2";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
-// Triangles: verify signature of sync-checkpoint message
+// DeepOnion: verify signature of sync-checkpoint message
 bool CSyncCheckpoint::CheckSignature()
 {
     CKey key;
@@ -397,7 +397,7 @@ bool CSyncCheckpoint::CheckSignature()
     return true;
 }
 
-// Triangles: process synchronized checkpoint
+// DeepOnion: process synchronized checkpoint
 bool CSyncCheckpoint::ProcessSyncCheckpoint(CNode* pfrom)
 {
     if (!CheckSignature())

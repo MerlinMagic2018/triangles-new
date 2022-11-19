@@ -1,4 +1,4 @@
 
-src/qt/Triangles-qt /usr/bin/
-src/qt/res/icons/Triangles.png usr/share/pixmaps
-debian/Triangles-qt.desktop /usr/share/applications/
+src/qt/DeepOnion-qt /usr/bin/
+src/qt/res/icons/DeepOnion.png usr/share/pixmaps
+debian/DeepOnion-qt.desktop /usr/share/applications/

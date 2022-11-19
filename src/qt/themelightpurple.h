@@ -1,8 +1,8 @@
 //
 //
 
-#ifndef DEEPTRI_THEME_LIGHT_PURPLE_H
-#define DEEPTRI_THEME_LIGHT_PURPLE_H
+#ifndef DEEPONION_THEME_LIGHT_PURPLE_H
+#define DEEPONION_THEME_LIGHT_PURPLE_H
 
 #include "theme.h"
 
@@ -13,4 +13,4 @@ public:
 };
 
 
-#endif //DEEPTRI_THEME_LIGHT_PURPLE_H
+#endif //DEEPONION_THEME_LIGHT_PURPLE_H

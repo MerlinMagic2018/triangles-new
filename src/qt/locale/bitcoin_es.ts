@@ -5,22 +5,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Triangles</source>
-        <translation>Acerca de Triangles</translation>
+        <source>About DeepOnion</source>
+        <translation>Acerca de DeepOnion</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Triangles&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Triangles&lt;/b&gt; versión</translation>
+        <source>&lt;b&gt;DeepOnion&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;DeepOnion&lt;/b&gt; versión</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Triangles developers</source>
+Copyright © 2014 The DeepOnion developers</source>
         <translation>Copyright © 2009-2014 Los desarrolladores de Bitcoin
 Copyright © 2012-2014 Los desarrolladores de Novacoin
-Copyright © 2014 Los desarrolladores de Triangles</translation>
+Copyright © 2014 Los desarrolladores de DeepOnion</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -67,8 +67,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your Triangles addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Éstas son las direcciones de Triangles para recibir pagos. Es posible que desees dar una diferente a cada remitente para que puedas realizar un seguimiento de quien te está pagando.</translation>
+        <source>These are your DeepOnion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Éstas son las direcciones de DeepOnion para recibir pagos. Es posible que desees dar una diferente a cada remitente para que puedas realizar un seguimiento de quien te está pagando.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -82,8 +82,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Triangles address</source>
-        <translation>Firmar un mensaje para demostrar que eres dueño de tu dirección de Triangles</translation>
+        <source>Sign a message to prove you own a DeepOnion address</source>
+        <translation>Firmar un mensaje para demostrar que eres dueño de tu dirección de DeepOnion</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -97,8 +97,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified Triangles address</source>
-        <translation>Verifica el mensaje para asegurarte que fue firmado por una dirección específica de Triangles</translation>
+        <source>Verify a message to ensure it was signed with a specified DeepOnion address</source>
+        <translation>Verifica el mensaje para asegurarte que fue firmado por una dirección específica de DeepOnion</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -265,8 +265,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="-58"/>
-        <source>Triangles will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Triangles se cerrará para terminar el proceso de encriptación. Recuerda que la encriptación de tu monedero no puede proteger completamente que tus monedas sean robadas por malware infectando tu computadora.</translation>
+        <source>DeepOnion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>DeepOnion se cerrará para terminar el proceso de encriptación. Recuerda que la encriptación de tu monedero no puede proteger completamente que tus monedas sean robadas por malware infectando tu computadora.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -379,8 +379,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="+6"/>
-        <source>Show information about Triangles</source>
-        <translation>Mostrar información acerca de Triangles</translation>
+        <source>Show information about DeepOnion</source>
+        <translation>Mostrar información acerca de DeepOnion</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -432,13 +432,13 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="-64"/>
-        <source>Send coins to a Triangles address</source>
-        <translation>Enviar monedas a una dirección de Triangles</translation>
+        <source>Send coins to a DeepOnion address</source>
+        <translation>Enviar monedas a una dirección de DeepOnion</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for Triangles</source>
-        <translation>Modificar opciones de configuración de Triangles</translation>
+        <source>Modify configuration options for DeepOnion</source>
+        <translation>Modificar opciones de configuración de DeepOnion</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -477,8 +477,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="-202"/>
-        <source>Triangles</source>
-        <translation>Triangles</translation>
+        <source>DeepOnion</source>
+        <translation>DeepOnion</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -487,8 +487,8 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="+180"/>
-        <source>&amp;About Triangles</source>
-        <translation>&amp;Acerca de Triangles</translation>
+        <source>&amp;About DeepOnion</source>
+        <translation>&amp;Acerca de DeepOnion</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -544,15 +544,15 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>Triangles client</source>
-        <translation>Cliente Triangles</translation>
+        <source>DeepOnion client</source>
+        <translation>Cliente DeepOnion</translation>
     </message>
     <message numerus="yes">
         <location line="+75"/>
-        <source>%n active connection(s) to Triangles network</source>
+        <source>%n active connection(s) to DeepOnion network</source>
         <translation>
-            <numerusform>%n conexión activa en la red Triangles</numerusform>
-            <numerusform>%n conexiones activas en la red Triangles</numerusform>
+            <numerusform>%n conexión activa en la red DeepOnion</numerusform>
+            <numerusform>%n conexiones activas en la red DeepOnion</numerusform>
         </translation>
     </message>
     <message>
@@ -595,13 +595,13 @@ Distribuido bajo la licencia del software MIT/X11, ve el siguiente archivo adjun
     </message>
     <message>
         <location line="-312"/>
-        <source>About Triangles card</source>
-        <translation>Acerca de la carta Triangles</translation>
+        <source>About DeepOnion card</source>
+        <translation>Acerca de la carta DeepOnion</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Triangles card</source>
-        <translation>Mostrar información acerca de la carta Triangles</translation>
+        <source>Show information about DeepOnion card</source>
+        <translation>Mostrar información acerca de la carta DeepOnion</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -689,8 +689,8 @@ Dirección: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Triangles address or malformed URI parameters.</source>
-        <translation>El URI no se puede analizar! Esto puede ser causado por una dirección de Triangles no válida o parámetros de URI malformados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid DeepOnion address or malformed URI parameters.</source>
+        <translation>El URI no se puede analizar! Esto puede ser causado por una dirección de DeepOnion no válida o parámetros de URI malformados.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -761,8 +761,8 @@ Dirección: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. Triangles can no longer continue safely and will quit.</source>
-        <translation>Error fatal. Triangles no puede continuar y se cerrará.</translation>
+        <source>A fatal error occurred. DeepOnion can no longer continue safely and will quit.</source>
+        <translation>Error fatal. DeepOnion no puede continuar y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -1095,8 +1095,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Triangles address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección válida de Triangles.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid DeepOnion address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección válida de DeepOnion.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1114,8 +1114,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>Triangles-Qt</source>
-        <translation>Triangles-Qt</translation>
+        <source>DeepOnion-Qt</source>
+        <translation>DeepOnion-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1187,13 +1187,13 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Triangles after logging in to the system.</source>
-        <translation>Iniciar Triangles automáticamente después de entrar en el sistema.</translation>
+        <source>Automatically start DeepOnion after logging in to the system.</source>
+        <translation>Iniciar DeepOnion automáticamente después de entrar en el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Triangles on system login</source>
-        <translation>Iniciar Triangles al ingresar al &amp;sistema</translation>
+        <source>&amp;Start DeepOnion on system login</source>
+        <translation>Iniciar DeepOnion al ingresar al &amp;sistema</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1212,8 +1212,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Triangles client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Triangles en el router. Esto sólo funciona cuando el router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the DeepOnion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente DeepOnion en el router. Esto sólo funciona cuando el router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1222,8 +1222,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Triangles network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conectarse a la red Triangles a través de un proxy SOCKS (Ejemplo: al conectarse a través de Tor).</translation>
+        <source>Connect to the DeepOnion network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conectarse a la red DeepOnion a través de un proxy SOCKS (Ejemplo: al conectarse a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1297,8 +1297,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Triangles.</source>
-        <translation>El idioma de la interfaz de usuario se puede configurar aquí. Ésta configuración se aplicará después de reiniciar Triangles.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting DeepOnion.</source>
+        <translation>El idioma de la interfaz de usuario se puede configurar aquí. Ésta configuración se aplicará después de reiniciar DeepOnion.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1312,8 +1312,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Triangles addresses in the transaction list or not.</source>
-        <translation>Mostrar o no mostrar direcciones de Triangles en la lista de transacciones.</translation>
+        <source>Whether to show DeepOnion addresses in the transaction list or not.</source>
+        <translation>Mostrar o no mostrar direcciones de DeepOnion en la lista de transacciones.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1359,8 +1359,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Triangles.</source>
-        <translation>Ésta configuración se aplicará después de reiniciar Triangles.</translation>
+        <source>This setting will take effect after restarting DeepOnion.</source>
+        <translation>Ésta configuración se aplicará después de reiniciar DeepOnion.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1378,8 +1378,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Triangles network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada podría ser obsoleta. Tu monedero se sincroniza automáticamente con la red de Triangles después de establecerse una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DeepOnion network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada podría ser obsoleta. Tu monedero se sincroniza automáticamente con la red de DeepOnion después de establecerse una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1594,8 +1594,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Triangles-Qt help message to get a list with possible Triangles command-line options.</source>
-        <translation>Mostrar el mensaje de ayuda de Triangles-Qt para obtener una lista con las posibles opciones de línea de comandos para Triangles.</translation>
+        <source>Show the DeepOnion-Qt help message to get a list with possible DeepOnion command-line options.</source>
+        <translation>Mostrar el mensaje de ayuda de DeepOnion-Qt para obtener una lista con las posibles opciones de línea de comandos para DeepOnion.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1614,13 +1614,13 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Triangles - Debug window</source>
-        <translation>Triangles - Ventana de depuración</translation>
+        <source>DeepOnion - Debug window</source>
+        <translation>DeepOnion - Ventana de depuración</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Triangles Core</source>
-        <translation>Núcleo de Triangles</translation>
+        <source>DeepOnion Core</source>
+        <translation>Núcleo de DeepOnion</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1629,8 +1629,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Triangles debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abre el archivo de registro de Triangles del directorio de datos actual. Esto puede tardar algunos segundos en el caso de archivos grandes.</translation>
+        <source>Open the DeepOnion debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Abre el archivo de registro de DeepOnion del directorio de datos actual. Esto puede tardar algunos segundos en el caso de archivos grandes.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1639,8 +1639,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the Triangles RPC console.</source>
-        <translation>Bienvenido a la consola RPC de Triangles</translation>
+        <source>Welcome to the DeepOnion RPC console.</source>
+        <translation>Bienvenido a la consola RPC de DeepOnion</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1713,8 +1713,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 TRI</source>
-        <translation>0.00 TRI</translation>
+        <source>0.00 ONION</source>
+        <translation>0.00 ONION</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1783,8 +1783,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 TRI</source>
-        <translation>123.456 TRI</translation>
+        <source>123.456 ONION</source>
+        <translation>123.456 ONION</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1798,8 +1798,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Triangles address</source>
-        <translation>Introduce una dirección de Triangles</translation>
+        <source>Enter a DeepOnion address</source>
+        <translation>Introduce una dirección de DeepOnion</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1898,8 +1898,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid Triangles address</source>
-        <translation>ADVERTENCIA: La dirección de Triangles es inválida</translation>
+        <source>WARNING: Invalid DeepOnion address</source>
+        <translation>ADVERTENCIA: La dirección de DeepOnion es inválida</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1972,8 +1972,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Triangles address</source>
-        <translation>Introduce una dirección de Triangles</translation>
+        <source>Enter a DeepOnion address</source>
+        <translation>Introduce una dirección de DeepOnion</translation>
     </message>
 </context>
 <context>
@@ -2033,8 +2033,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Triangles address</source>
-        <translation>Firma el mensaje para demostrar que posees ésta dirección de Triangles</translation>
+        <source>Sign the message to prove you own this DeepOnion address</source>
+        <translation>Firma el mensaje para demostrar que posees ésta dirección de DeepOnion</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2065,8 +2065,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Triangles address</source>
-        <translation>Verifica el mensaje para asegurarte de que se firmó con la dirección de Triangles especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified DeepOnion address</source>
+        <translation>Verifica el mensaje para asegurarte de que se firmó con la dirección de DeepOnion especificada.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2076,8 +2076,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Triangles address </source>
-        <translation>Introduce una dirección de Triangles</translation>
+        <source>Enter a DeepOnion address </source>
+        <translation>Introduce una dirección de DeepOnion</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2086,8 +2086,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Triangles signature</source>
-        <translation>Introduce la firma de Triangles</translation>
+        <source>Enter DeepOnion signature</source>
+        <translation>Introduce la firma de DeepOnion</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2669,8 +2669,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>Triangles version</source>
-        <translation>Versión de Triangles</translation>
+        <source>DeepOnion version</source>
+        <translation>Versión de DeepOnion</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2679,8 +2679,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Trianglesd</source>
-        <translation>Envía un comando a -server o Trianglesd</translation>
+        <source>Send command to -server or DeepOniond</source>
+        <translation>Envía un comando a -server o DeepOniond</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2699,13 +2699,13 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: Triangles.conf)</source>
-        <translation>Especifica un archivo de configuración (por defecto: Triangles.conf)</translation>
+        <source>Specify configuration file (default: DeepOnion.conf)</source>
+        <translation>Especifica un archivo de configuración (por defecto: DeepOnion.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Trianglesd.pid)</source>
-        <translation>Especifica un archivo pid (por defecto: Trianglesd.pid)</translation>
+        <source>Specify pid file (default: DeepOniond.pid)</source>
+        <translation>Especifica un archivo pid (por defecto: DeepOniond.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2854,8 +2854,8 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Triangles will not work properly.</source>
-        <translation>Advertencia: Verifica que la fecha y hora del equipo sean correctas! Si tu reloj es erróneo Triangles no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong DeepOnion will not work properly.</source>
+        <translation>Advertencia: Verifica que la fecha y hora del equipo sean correctas! Si tu reloj es erróneo DeepOnion no funcionará correctamente.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3042,13 +3042,13 @@ Esto significa que se requiere una tasa de al menos %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=Trianglesrpc
+rpcuser=DeepOnionrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Triangles Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;DeepOnion Alert&quot; admin@foo.com
 </source>
         <translation>%s, debes configurar rpcpassword en el fichero de configuración:
  %s
@@ -3058,7 +3058,7 @@ rpcpassword=%s
 (no necesitas recordar esta contraseña)
 Si el fichero no existe, crea uno con permisos de lectura unicamente.
 Se recomienda también activar las alarmas para que los problemas te sean notificados;
-por ejemplo: alertnotify=echo %%s | mail -s &quot;Triangles Alert&quot; admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s &quot;DeepOnion Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3183,13 +3183,13 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;Triangles Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  Triangles is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Probablemente Triangles ya se está ejecutando.</translation>
+        <source>Cannot obtain a lock on data directory %s.  DeepOnion is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Probablemente DeepOnion ya se está ejecutando.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>Triangles</source>
-        <translation>Triangles</translation>
+        <source>DeepOnion</source>
+        <translation>DeepOnion</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3223,13 +3223,13 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;Triangles Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Triangles</source>
-        <translation>Error cargando wallet.dat: El monedero requiere una nueva versión de Triangles</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of DeepOnion</source>
+        <translation>Error cargando wallet.dat: El monedero requiere una nueva versión de DeepOnion</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Triangles to complete</source>
-        <translation>El monedero necesita ser reescrito: reinicia Triangles para completar</translation>
+        <source>Wallet needed to be rewritten: restart DeepOnion to complete</source>
+        <translation>El monedero necesita ser reescrito: reinicia DeepOnion para completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3298,8 +3298,8 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;Triangles Alert&quot; admin@fo
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. Triangles is probably already running.</source>
-        <translation>No se puede enlazar a %s en este equipo. Triangles probablemente ya esté en funcionamiento.</translation>
+        <source>Unable to bind to %s on this computer. DeepOnion is probably already running.</source>
+        <translation>No se puede enlazar a %s en este equipo. DeepOnion probablemente ya esté en funcionamiento.</translation>
     </message>
     <message>
         <location line="-97"/>

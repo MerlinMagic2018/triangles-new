@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2017 The Bitcoin Core developers
-// Copyright (c) 2017-2018 The Triangles developers
+// Copyright (c) 2017-2018 The DeepOnion developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -114,15 +114,15 @@ Intro::Intro(QWidget *parent) :
     signalled(false)
 {
     ui->setupUi(this);
-    ui->storageLabel->setText(ui->storageLabel->text().arg(tr("Triangles")));
+    ui->storageLabel->setText(ui->storageLabel->text().arg(tr("DeepOnion")));
 
     ui->lblExplanation1->setText(ui->lblExplanation1->text()
-        .arg(tr("Triangles"))
+        .arg(tr("DeepOnion"))
         .arg(BLOCK_CHAIN_SIZE)
         .arg(2017)
-        .arg(tr("Triangles"))
+        .arg(tr("DeepOnion"))
     );
-    ui->lblExplanation2->setText(ui->lblExplanation2->text().arg(tr("Triangles")));
+    ui->lblExplanation2->setText(ui->lblExplanation2->text().arg(tr("DeepOnion")));
 
     requiredSpace += BLOCK_CHAIN_SIZE;
     QString storageRequiresMsg = tr("");
@@ -197,7 +197,7 @@ bool Intro::pickDataDirectory()
                 }
                 break;
             } catch (const fs::filesystem_error&) {
-                QMessageBox::critical(0, tr("Triangles"),
+                QMessageBox::critical(0, tr("DeepOnion"),
                     tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }
@@ -207,8 +207,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("fReset", false);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the Triangles.conf file in the default data directory
-     * (to be consistent with trianglesd behavior)
+     * override -datadir in the DeepOnion.conf file in the default data directory
+     * (to be consistent with deeponiond behavior)
      */
     if(dataDir != getDefaultDataDirectory()) {
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

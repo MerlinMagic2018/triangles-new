@@ -4,27 +4,27 @@ SUBDIRS = tor src
 
 GZIP_ENV="-9n"
 
-BITCOIND_BIN=$(top_builddir)/src/Trianglesd$(EXEEXT)
-BITCOIN_QT_BIN=$(top_builddir)/src/qt/Triangles-qt$(EXEEXT)
+BITCOIND_BIN=$(top_builddir)/src/DeepOniond$(EXEEXT)
+BITCOIN_QT_BIN=$(top_builddir)/src/qt/DeepOnion-qt$(EXEEXT)
 BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
-DEEPTRI_QT_APP=Triangles-qt
-DEEPTRI_DAEMON=Trianglesd
-OSX_APP=Triangles-Qt.app
-OSX_DMG=Triangles-Qt.dmg
+DEEPONION_QT_APP=DeepOnion-qt
+DEEPONION_DAEMON=DeepOniond
+OSX_APP=DeepOnion-Qt.app
+OSX_DMG=DeepOnion-Qt.dmg
 OSX_BACKGROUND_SVG=background.svg
 OSX_BACKGROUND_IMAGE=background.png
 OSX_BACKGROUND_IMAGE_DPIS=36 72
 OSX_DEPLOY_SCRIPT=$(top_srcdir)/contrib/macdeploy/macdeployqtplus
 OSX_DSSTORE_GEN=$(top_srcdir)/contrib/macdeploy/custom_dsstore.py
 OSX_FANCY_PLIST=$(top_srcdir)/contrib/macdeploy/fancy.plist
-OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/Triangles.icns
+OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/DeepOnion.icns
 OSX_PLIST=$(top_srcdir)/share/qt/Info.plist #not installed
 OSX_QT_TRANSLATIONS = da,de,es,hu,ru,uk,zh_CN,zh_TW
 
 DIST_DOCS = $(wildcard doc/*.md) $(wildcard doc/release-notes/*.md)
 
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/triangles.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/deeponion.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
@@ -74,17 +74,17 @@ $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/Resources/Triangles.icns: $(OSX_INSTALLER_ICONS)
+$(OSX_APP)/Contents/Resources/DeepOnion.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/Triangles-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/DeepOnion-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
-  $(OSX_APP)/Contents/Resources/Triangles.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/Triangles-Qt
+  $(OSX_APP)/Contents/Resources/DeepOnion.icns $(OSX_APP)/Contents/Info.plist \
+  $(OSX_APP)/Contents/MacOS/DeepOnion-Qt
 
 if BUILD_DARWIN
 $(OSX_DMG): $(OSX_APP_BUILT) $(OSX_PACKAGING)
@@ -132,7 +132,7 @@ test_bitcoin_filtered.info: test_bitcoin.info
 block_test.info: test_bitcoin_filtered.info
 	$(MKDIR_P) qa/tmp
 	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
-	$(LCOV) -c -d $(abs_builddir)/src --t DEEPTRIJBlockTest -o $@
+	$(LCOV) -c -d $(abs_builddir)/src --t DEEPONIONJBlockTest -o $@
 	$(LCOV) -z -d $(abs_builddir)/src
 	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
@@ -170,5 +170,5 @@ CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_bitcoin.coverage/ total.coverage/ $(OSX_APP) $(DEEPTRI_QT_APP) $(DEEPTRI_DAEMON) release_$(DEEPTRI_PLATFORM).zip
+	rm -rf test_bitcoin.coverage/ total.coverage/ $(OSX_APP) $(DEEPONION_QT_APP) $(DEEPONION_DAEMON) release_$(DEEPONION_PLATFORM).zip
 	

@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Triangles Developers
+// Copyright (c) 2018 The DeepOnion Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,7 +32,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
-    ui->payTo->setPlaceholderText(tr("Enter a Triangles address"));
+    ui->payTo->setPlaceholderText(tr("Enter a DeepOnion address"));
 #endif
     setStyleSheet(themeManager->getCurrent()->getQFrameGeneralStyle());
 

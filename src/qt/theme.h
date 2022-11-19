@@ -2,8 +2,8 @@
 // Created by arcas on 5/18/2018.
 //
 
-#ifndef DEEPTRI_THEME_THEME_H
-#define DEEPTRI_THEME_THEME_H
+#ifndef DEEPONION_THEME_THEME_H
+#define DEEPONION_THEME_THEME_H
 
 #include <QString>
 
@@ -63,7 +63,7 @@ public:
     const QString getMenuHeaderStyle() const;
     const QString getSubSectionTitleStyle() const;
     const QString getRoundedButtonStyle() const;
-	const QString getTrianglesLogo() const;
+	const QString getDeepOnionLogo() const;
 
 
 protected:
@@ -122,4 +122,4 @@ protected:
 };
 
 
-#endif //DEEPTRI_THEME_THEME_H
+#endif //DEEPONION_THEME_THEME_H

@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Triangles Qt
-Comment=The GUI version of the Triangles wallet.
-Exec=Triangles-qt
-Icon=Triangles
+Name=DeepOnion Qt
+Comment=The GUI version of the DeepOnion wallet.
+Exec=DeepOnion-qt
+Icon=DeepOnion
 Type=Application
 Keywords=wallet,crypto,tor,
 Categories=Utility;

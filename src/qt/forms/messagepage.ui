@@ -505,7 +505,7 @@ border-width:0px; margin-left: 8px;</string>
             <item>
              <widget class="QPushButton" name="sendButton">
               <property name="toolTip">
-               <string>Sign a message to prove you own a TRI address</string>
+               <string>Sign a message to prove you own a ONION address</string>
               </property>
               <property name="styleSheet">
                <string notr="true">background-color: #486EBA;

@@ -1,2 +1,2 @@
 # Requires specific db version
-trianglesd: build-depends-on-versioned-berkeley-db
+deeponiond: build-depends-on-versioned-berkeley-db

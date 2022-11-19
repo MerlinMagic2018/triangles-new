@@ -2,7 +2,7 @@
  * W.J. van der Laan 2011-2012
  */
  
-// Copyright (c) 2017-2018 The Triangles Developers
+// Copyright (c) 2017-2018 The DeepOnion Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -115,7 +115,7 @@ static std::string Translate(const char* psz)
 static void handleRunawayException(std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Triangles can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. DeepOnion can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
     exit(1);
 }
 
@@ -152,7 +152,7 @@ int main(int argc, char *argv[])
     {
         // This message can not be translated, as translation is not initialized yet
         // (which not yet possible because lang=XX can be overridden in bitcoin.conf in the data directory)
-        QMessageBox::critical(0, "Triangles",
+        QMessageBox::critical(0, "DeepOnion",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
@@ -160,13 +160,13 @@ int main(int argc, char *argv[])
 
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
-    app.setOrganizationName("Triangles");
+    app.setOrganizationName("DeepOnion");
 
     if(GetBoolArg("-testnet")) { // Separate UI settings for testnet
-        app.setApplicationName("Triangles-Qt-testnet");
+        app.setApplicationName("DeepOnion-Qt-testnet");
     }
     else
-        app.setApplicationName("Triangles-Qt");
+        app.setApplicationName("DeepOnion-Qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
