@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Welcome to DeepOnion</string>
+   <string>Welcome to Triangles</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -49,7 +49,7 @@
       <string notr="true">QLabel { font-style:italic; }</string>
      </property>
      <property name="text">
-      <string>Welcome to DeepOnion - Anonymous Cryptocurrency and Untraceable Payments</string>
+      <string>Welcome to Triangles - Anonymous Cryptocurrency and Untraceable Payments</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

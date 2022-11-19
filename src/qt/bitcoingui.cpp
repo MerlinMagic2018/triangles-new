@@ -5,7 +5,7 @@
  * The Bitcoin Developers 2011-2012
  */
 
-// Copyright (c) 2017-2018 The DeepOnion Developers
+// Copyright (c) 2017-2018 The Triangles Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
  
@@ -106,13 +106,13 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
 #ifdef Q_OS_MAC
     resize(960, 610);
-    setWindowTitle(tr("DeepOnion wallet - Mac"));
+    setWindowTitle(tr("Triangles wallet - Mac"));
 #elif _WIN32
     resize(890, 600);
-    setWindowTitle(tr("DeepOnion wallet - Windows"));
+    setWindowTitle(tr("Triangles wallet - Windows"));
 #else
     resize(1020, 650);
-    setWindowTitle(tr("DeepOnion wallet - Linux"));
+    setWindowTitle(tr("Triangles wallet - Linux"));
 #endif
 
 #ifndef Q_OS_MAC
@@ -145,9 +145,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     fakeToolbarForBlueLine->setMovable(false);
     fakeToolbarForBlueLine->setStyleSheet(themeManager->getCurrent()->getMenuHeaderStyle());
     fakeToolbarForBlueLine->setIconSize(QSize(146, 40));
-    QAction *deepOnionLogo = new QAction(QIcon(":/icons/DeepOnionLogoWithTextWhite"), "", this);
-    deepOnionLogo->setEnabled(false);
-    fakeToolbarForBlueLine->addAction(deepOnionLogo);
+    QAction *TrianglesLogo = new QAction(QIcon(":/icons/TrianglesLogoWithTextWhite"), "", this);
+    TrianglesLogo->setEnabled(false);
+    fakeToolbarForBlueLine->addAction(TrianglesLogo);
     fakeToolbarForBlueLine->setOrientation(Qt::Vertical);
     fakeToolbarForBlueLine->setFixedWidth(toolBarWidth);
     fakeToolbarForBlueLine->setFixedHeight(59);
@@ -320,7 +320,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole = new RPCConsole(this);
     connect(openRPCConsoleAction, SIGNAL(triggered()), rpcConsole, SLOT(show()));
     
-    // Clicking on "Open configuration file" in "Settings" menu opens DeepOnion.conf file in the system default editor
+    // Clicking on "Open configuration file" in "Settings" menu opens Triangles.conf file in the system default editor
     connect(openConfEditorAction, SIGNAL(triggered()), rpcConsole, SLOT(showConfEditor()));
     
     // Clicking on "Verify Message" in the address book sends you to the verify message tab
@@ -358,7 +358,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(messageAction);
 
     sendCoinsAction = new QAction(QIcon(themeManager->getCurrent()->getMainMenuSendcoinsNormalBtnIco()), tr("&Send coins"), this);
-    sendCoinsAction->setToolTip(tr("Send coins to a DeepOnion address"));
+    sendCoinsAction->setToolTip(tr("Send coins to a Triangles address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
@@ -398,8 +398,8 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About DeepOnion"), this);
-    aboutAction->setToolTip(tr("Show information about DeepOnion"));
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Triangles"), this);
+    aboutAction->setToolTip(tr("Show information about Triangles"));
     aboutAction->setMenuRole(QAction::AboutRole);
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -409,14 +409,14 @@ void BitcoinGUI::createActions()
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for DeepOnion"));
+    optionsAction->setToolTip(tr("Modify configuration options for Triangles"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
     encryptWalletAction->setToolTip(tr("Encrypt or decrypt wallet"));
     encryptWalletAction->setCheckable(true);
     openConfEditorAction = new QAction(QIcon(":/icons/edit"), tr("Open configuration &file..."), this);
-    openConfEditorAction->setToolTip(tr("Open the configuration file DeepOnion.conf"));
+    openConfEditorAction->setToolTip(tr("Open the configuration file Triangles.conf"));
     backupWalletAction = new QAction(QIcon(":/icons/filesave"), tr("&Backup Wallet..."), this);
     backupWalletAction->setToolTip(tr("Backup wallet to another location"));
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
@@ -524,7 +524,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 #endif
             if (trayIcon)
             {
-                trayIcon->setToolTip(tr("DeepOnion client") + QString(" ") + tr("[testnet]"));
+                trayIcon->setToolTip(tr("Triangles client") + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
                 toggleHideAction->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
@@ -601,7 +601,7 @@ void BitcoinGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("DeepOnion client"));
+    trayIcon->setToolTip(tr("Triangles client"));
 
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
 
@@ -691,7 +691,7 @@ void BitcoinGUI::setNumConnections(int count)
     }
     
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to DeepOnion network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Triangles network", "", count));
 
     if (fTorEnabled == 1)
     {
@@ -1047,7 +1047,7 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid DeepOnion address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Triangles address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
@@ -1062,7 +1062,7 @@ void BitcoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid DeepOnion address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Triangles address or malformed URI parameters."));
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)

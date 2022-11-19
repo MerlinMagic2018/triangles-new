@@ -2,8 +2,8 @@
 // Created by arcas on 5/18/2018.
 //
 
-#ifndef DEEPONION_THEME_THEMEMANAGER_H
-#define DEEPONION_THEME_THEMEMANAGER_H
+#ifndef DEEPTRI_THEME_THEMEMANAGER_H
+#define DEEPTRI_THEME_THEMEMANAGER_H
 #include <iostream>
 #include <string>
 #include <map>
@@ -36,4 +36,4 @@ private:
 };
 
 
-#endif //DEEPONION_THEME_THEMEMANAGER_H
+#endif //DEEPTRI_THEME_THEMEMANAGER_H

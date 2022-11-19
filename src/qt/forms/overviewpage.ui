@@ -182,7 +182,7 @@
                     <string notr="true">color: #FFFFFF</string>
                    </property>
                    <property name="text">
-                    <string>DeepOnion Wallet Overview</string>
+                    <string>Triangles Wallet Overview</string>
                    </property>
                   </widget>
                  </item>
@@ -261,8 +261,8 @@
                      </property>
                      <property name="icon">
                       <iconset>
-                       <normaloff>:/icons/DeepOnionLogo</normaloff>
-                       <normalon>:/icons/DeepOnionLogo</normalon>:/icons/DeepOnionLogo</iconset>
+                       <normaloff>:/icons/TrianglesLogo</normaloff>
+                       <normalon>:/icons/TrianglesLogo</normalon>:/icons/TrianglesLogo</iconset>
                      </property>
                      <property name="iconSize">
                       <size>

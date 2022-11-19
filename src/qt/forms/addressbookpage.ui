@@ -228,7 +228,7 @@
                  <string notr="true">color: white; font-weight: bold;</string>
                 </property>
                 <property name="text">
-                 <string>These are your DeepOnion addresses for receiving payments.</string>
+                 <string>These are your Triangles addresses for receiving payments.</string>
                 </property>
                 <property name="textFormat">
                  <enum>Qt::PlainText</enum>
@@ -419,7 +419,7 @@ border-width:0px; margin-left: 8px;</string>
             <item>
              <widget class="QPushButton" name="signMessage">
               <property name="toolTip">
-               <string>Sign a message to prove you own a DeepOnion address</string>
+               <string>Sign a message to prove you own a Triangles address</string>
               </property>
               <property name="styleSheet">
                <string notr="true">background-color: #486EBA;
@@ -435,7 +435,7 @@ border-width:0px; margin-left: 8px;</string>
             <item>
              <widget class="QPushButton" name="verifyMessage">
               <property name="toolTip">
-               <string>Verify a message to ensure it was signed with a specified DeepOnion address</string>
+               <string>Verify a message to ensure it was signed with a specified Triangles address</string>
               </property>
               <property name="styleSheet">
                <string notr="true">background-color: #486EBA;
